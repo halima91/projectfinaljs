@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>shopping</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css_shopping/shopping.css" />
+        <script src="js_work/all.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link type="text/html" href="../work/page2.html" >
+    </head>
+    <body>
+        <header >
+            <div class="navBtn" id="btn_nav" onclick="show()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="nav" id="nav_list">
+                <ul class="nav_link">
+                    <li><a href="#" class="nav_single_link"> <img src="img_shopping/navLogo.svg"></a></li>
+                    <li><a href="#" class="nav_single_link"> Home</a></li>
+                    <li><a href="#" class="nav_single_link">About</a></li>
+                    <li><a href="#" class="nav_single_link"> Free Drink</a></li>
+                    <li><a href="#" class="nav_single_link work">work</a></li>
+                    <li><a href="#" class="nav_single_link">contact</a></li>
+                    <li><a href="#" class="nav_single_link shopping"> <i class="fa fa-shopping-cart shop-icon-char"></i>
+                        <br> <label class="bell_fonts totall"> <strong>Total:</strong></label> <label  id="total" class="bell_fonts totall"> 0 DTN</label>
+                        <div class="notification" id="notif">0</div>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="espace"></div>
+        </header>
+        <main>
+            <button type="button" onclick='add()' >click</button>
+            <form name="form1" action="shopping.html" method="get"></form>
+            <div id="elmts">
+
+            </div>
+
+        </main>
+        <footer>
+
+        </footer>
+        <script src="js_shopping/shopping.js"></script>
+        <script src="../work/js_work/main.js"></script>
+    </body>
+</html>

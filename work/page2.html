@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>our work</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css_work/coffee.css" />
+        <script src="js_work/all.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link type="text/html" href="../shopping/shopping.html" >
+    </head>
+    <body class="container">
+        <header id="head">
+            <div class="navBtn" id="btn_nav" onclick="show()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="nav" id="nav_list">
+                <ul class="nav__links">
+                    <li ><a href="#" class="nav_single_link"> <img src="img_work/navLogo.svg"></a></li>
+                    <li><a href="../acceuil/index.html" class="nav_single_link"> Home</a></li>
+                    <li><a href="../acceuil/index.html#about" class="nav_single_link">About</a></li>
+                    <li><a href="../form/form.html" class="nav_single_link"> Free Drink</a></li>
+                    <li><a href="#" class="nav_single_link work">work</a></li>
+                    <li><a href="../contact/contact.html" class="nav_single_link">contact</a></li>
+                    <li  onclick="add()"><a href="../shopping/shopping.html" class="nav_single_link shopping"> <i class="fa fa-shopping-cart shop-icon-char"></i>
+                        <br> <label class="bell_fonts totall"> <strong>Total:</strong></label> <label  id="total" class="bell_fonts totall"> 0 DTN</label>
+                        <div class="notification" id="notif">0</div>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="espace"> <img src="../work/img_work/background (2).jpeg" class="img-fluid" alt="Responsive image"></div>
+        </header>
+        <main>
+                        <!-- <form name="form1" action="shopping.html" method="get"> -->
+            
+            <a href="#head"><button type='button' class="btn" id="btn_scroll"><i class="fa fa-arrow-up"></i></button></a>
+                    <section class="drink">
+                    <div class="section-title">
+                            <h1 class="section-title_name bell_fonts">our drinks</h1>
+                            <div class="section-title_underline"></div>
+                                <p class="section-tiltle_text">
+                 
+                                </p>
+                        </div>
+
+                    <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6  col-sm-12">
+                                    <div class="card" >
+                                        <div class="bloc-img">
+                                            <img src="img_work/work1.jpeg" class="card-img-top store-img" alt="coffee">
+                                                <span class="store-item-icon" onclick="sum_total(1)">
+                                                        <i class="fa fa-shopping-cart shop-icon"></i>
+                                                </span>
+                                        </div> 
+                                            <div class="card-body">
+                                              <h5 class="card-title">TOFFECOFFEE</h5>
+                                              <p class="card-text" id="price1">8 DTN</p>
+                                              
+                                            </div>
+                                         
+      
+                        
+                                        
+                                    </div>
+                               </div>
+                            <div class="col-lg-4 col-md-6  col-sm-12">
+                                    <div class="card" >
+                                        <div class="bloc-img">
+                                                <img src="img_work/work2.jpeg" class="card-img-top store-img" alt="...">
+                                                    <span class="store-item-icon" onclick="sum_total(2)">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                    </span>
+                                        </div>     
+                                       
+                                            <div class="card-body">
+                                              <h5 class="card-title">CAPPUCCINO</h5>
+                                              <p class="card-text" id="price2">5 DTN</p>
+                                              
+                                            </div>
+                                          </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  col-sm-12">
+                                    <div class="card"  id="card3">
+                                        <div class="bloc-img">
+                                                <img src="img_work/work3.jpeg" class="card-img-top store-img" alt="...">
+                                                    <span class="store-item-icon" onclick="sum_total(3)">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                    </span>
+                                        </div> 
+                                            
+                                            <div class="card-body">
+                                              <h5 class="card-title">TOFFECOFFE</h5>
+                                              <p class="card-text" id="price3">8 TDN</p>
+                                             
+                                            </div>
+                                          </div>
+                            </div>
+
+                
+                        </div>
+                        <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-6  col-sm-12">
+                                        <div class="card" >
+                                                
+                                                <div class="bloc-img">
+                                                        <img src="img_work/work6.jpeg" class="card-img-top store-img" alt="...">
+                                                            <span class="store-item-icon" onclick="sum_total(4)">
+                                                                    <i class="fa fa-shopping-cart"></i>
+                                                            </span>
+                                                </div> 
+                                                <div class="card-body">
+                                                  <h5 class="card-title">TURKISH COFFEE</h5>
+                                                  <p class="card-text" id="price4">3 TND</p>
+                                                  
+                                                </div>
+                                          
+                                            
+                                        </div>
+                                   </div>
+                                <div class="col-lg-4 col-md-6  col-sm-12">
+                                        <div class="card" >
+                                                
+                                                <div class="bloc-img">
+                                                        <img src="img_work/work4.jpeg" class="card-img-top store-img" alt="...">
+                                                            <span class="store-item-icon" onclick="sum_total(5)">
+                                                                    <i class="fa fa-shopping-cart"></i>
+                                                            </span>
+                                                </div> 
+                                                <div class="card-body">
+                                                  <h5 class="card-title">HOTCHOCLAT</h5>
+                                                  <p class="card-text" id="price5">7 TND</p>
+                                                  
+                                                </div>
+                                              </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6  col-sm-12">
+                                        <div class="card" >
+                                                
+                                                <div class="bloc-img">
+                                                        <img src="img_work/work5.jpeg" class="card-img-top store-img" alt="...">
+                                                            <span class="store-item-icon" onclick="sum_total(6)">
+                                                                    <i class="fa fa-shopping-cart"></i>
+                                                            </span>
+                                                </div> 
+                                                <div class="card-body">
+                                                  <h5 class="card-title">MILKSHAKE</h5>
+                                                  <p class="card-text" id="price6">7 TDN</p>
+                                                  
+                                                </div>
+                                        </div>
+                                </div>
+    
+                    
+                            </div>
+
+                    </form>
+            </section>
+
+            <section class="sweet">
+                    <div class="section-title">
+                            <h1 class="section-title_name bell_fonts">sweets</h1>
+                            <div class="section-title_underline"></div>
+                                <p class="section-tiltle_text">
+                 maiores.
+                                </p>
+                        </div>
+
+                    <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6  col-sm-12">
+                                    <div class="card" >
+                                        <div class="bloc-img">
+                                                <img src="img_work/sweet1.jpeg" class="card-img-top store-img" alt="...">
+                                                    <span class="store-item-icon" onclick="sum_total(7)">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                    </span>
+                                        </div> 
+                                            
+                                            <div class="card-body">
+                                              <h5 class="card-title">ICECREAM</h5>
+                                              <p class="card-text" id="price7">5 TDN</p>
+                                              
+                                            </div>
+                                       
+                                        
+                                    </div>
+                               </div>
+                            <div class="col-lg-4 col-md-6  col-sm-12">
+                                    <div class="card" >
+                                            
+                                            <div class="bloc-img">
+                                                <img src="img_work/sweet2.jpeg" class="card-img-top store-img" alt="...">
+                                                    <span class="store-item-icon" onclick="sum_total(8)">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                    </span>
+                                        </div> 
+                                            <div class="card-body">
+                                              <h5 class="card-title">PANCAKES</h5>
+                                              <p class="card-text" id="price8">6 TDN</p>
+                                              
+                                            </div>
+                                          </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  col-sm-12">
+                                    <div class="card" >
+                                           
+                                            <div class="bloc-img">
+                                                <img src="img_work/sweet3.jpeg" class="card-img-top store-img" alt="...">
+                                                    <span class="store-item-icon" onclick="sum_total(9)">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                    </span>
+                                        </div> 
+                                            <div class="card-body">
+                                              <h5 class="card-title">PANCAKES</h5>
+                                              <p class="card-text" id="price9">6 DTN</p>
+                                              
+                                            </div>
+                                          </div>
+                            </div>
+
+                
+                        </div>
+                        <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-6  col-sm-12">
+                                        <div class="card" >
+                                               
+                                                <div class="bloc-img">
+                                                        <img src="img_work/sweet4.jpeg" class="card-img-top store-img" alt="...">
+                                                            <span class="store-item-icon" onclick="sum_total(10)">
+                                                                    <i class="fa fa-shopping-cart"></i>
+                                                            </span>
+                                                </div> 
+                                                <div class="card-body">
+                                                  <h5 class="card-title">PANCAKES</h5>
+                                                  <p class="card-text" id="price10">6 DTN</p>
+                                                 
+                                                </div>
+                                            
+                                            
+                                        </div>
+                                   </div>
+                                <div class="col-lg-4 col-md-6  col-sm-12">
+                                        <div class="card" >
+                                               
+                                                <div class="bloc-img">
+                                                        <img src="img_work/sweet5.jpg" class="card-img-top store-img" alt="...">
+                                                            <span class="store-item-icon" onclick="sum_total(11)">
+                                                                    <i class="fa fa-shopping-cart"></i>
+                                                            </span>
+                                                </div> 
+                                                <div class="card-body">
+                                                  <h5 class="card-title">PANCAKES</h5>
+                                                  <p class="card-text" id="price11">6 DTN</p>
+                                                  
+                                                </div>
+                                              </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6  col-sm-12">
+                                        <div class="card" >
+                                                
+                                                <div class="bloc-img">
+                                                        <img src="img_work/sweet6.jpeg" class="card-img-top store-img" alt="...">
+                                                            <span class="store-item-icon" onclick="sum_total(12)">
+                                                                    <i class="fa fa-shopping-cart"></i>
+                                                            </span>
+                                                </div> 
+                                                <div class="card-body">
+                                                  <h5 class="card-title">PANCAKES</h5>
+                                                  <p class="card-text" id="price12">6 DTN</p>
+                                                  
+                                                </div>
+                                              </div>
+                                </div>
+    
+                    
+                            </div>
+
+                    
+            </section>
+
+        </main>
+        <footer>
+                <div class="banner__icons">
+                        <a href="#" class="banner__social-icon">
+                          <i class="fa fa-facebook fa-fw"></i>
+                        </a>
+                        <a href="#" class="banner__social-icon">
+                          <i class="fa fa-twitter fa-fw"></i>
+                        </a>
+                        <a href="#" class="banner__social-icon">
+                          <i class="fa fa-google-plus fa-fw"></i>
+                        </a>
+                        <a href="#" class="banner__social-icon">
+                          <i class="fa fa-instagram fa-fw"></i>
+                        </a>
+                      </div>         
+                             <div class="footer bell_fonts">coffee web site designed by nesrine et halima</div>
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js_work/main.js"></script>
+        <script src="js_work/shopping.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
+    </body>
+</html>
